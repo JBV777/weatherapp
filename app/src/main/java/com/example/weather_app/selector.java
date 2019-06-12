@@ -1,4 +1,4 @@
 package com.example.weather_app;
 
-public class cityselector {
+public class selector {
 }
