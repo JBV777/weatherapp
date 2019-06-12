@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="94dp"
+        android:text="What's the country?"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="132dp" />
 
@@ -17,7 +20,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="130dp"
+        android:text="What's the city?"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="276dp" />
 
@@ -25,6 +31,10 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="91dp"
         android:text="Find the weather"
         tools:layout_editor_absoluteX="138dp"
         tools:layout_editor_absoluteY="392dp" />
@@ -33,9 +43,13 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="149dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="Country"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="180dp" />
 
@@ -43,9 +57,13 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="184dp"
+        android:layout_marginStart="69dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="City"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="310dp" />
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
